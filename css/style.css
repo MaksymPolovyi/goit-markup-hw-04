@@ -148,10 +148,24 @@ ul {
 /* Hero */
 .hero {
   text-align: center;
-  background: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/people-office.jpg');
+
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 .hero-title {
   margin-bottom: 0px;
   margin-top: 0px;
@@ -195,6 +209,45 @@ ul {
 }
 .our-advanteges-item {
   width: 264px;
+}
+
+/* .our-advanteges-icon {
+  height: 64px;
+  width: 64px;
+} */
+
+.our-advanteges-item::before {
+  display: block;
+  content: '';
+  height: 112px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
+
+.strategy-icon::before {
+  background-image: url(../images/antenna.svg);
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.punctuality-icon::before {
+  background-image: url(../images/clock.svg);
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.diligence-icon::before {
+  background-image: url(../images/diagram.svg);
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.technologies-icon::before {
+  background-image: url(../images/astronaut.svg);
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .list-subtitle-our-advanteges {
@@ -260,8 +313,6 @@ ul {
   text-align: center;
 }
 .subtitle-team-list {
-  /* padding-top: 32px; */
-  /* padding-bottom: 8px; */
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -269,7 +320,6 @@ ul {
   color: var(--title-nav-text-color);
 }
 .text-list-team {
-  /* padding-bottom: 32px; */
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -283,6 +333,79 @@ ul {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+
+/* .team-social-list {
+  
+}
+.team-social-item {
+  width: 40px;
+  height: 40px;
+}
+.team-social-link {
+  background-color: #404bbf;
+  display: flex;
+  justify-content: center;
+}
+.team-social-icon {
+} */
+
+/* customers */
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.title-customers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-item {
+  content: '';
+  display: block;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.client1 {
+  background-image: url(../images/group.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.client2 {
+  background-image: url(../images/group1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.client3 {
+  background-image: url(../images/group2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.client4 {
+  background-image: url(../images/group3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.client5 {
+  background-image: url(../images/group4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.client6 {
+  background-image: url(../images/group5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Footer */
@@ -406,6 +529,11 @@ ul {
   border: 1px solid #e7e9fc;
   padding: 32px 0 32px 10px;
   border-top: none;
+}
+.portfolio-examples-item:hover,
+.portfolio-examples-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-link {
